@@ -35,5 +35,28 @@ for(let i =0; i<cardBtn.length; i++){
 
    
   });
-}
+};
+
+document.getElementById("history-btn").addEventListener("click",function(){
+  document.getElementById("card-sms-container").innerText = "";
+})
+ 
+const todayDate =  new Date();
+const dmy = { day:"numeric", month:"long", year:"numeric"};
+const localDate = todayDate.toLocaleDateString("en-US",dmy);
+document.getElementById("date-daynamic").innerText = localDate;
+
+
+const colors = ['lightblue', 'lightgreen', 'lightcoral', 'lightskyblue', 'lightpink', 'lightyellow'];
+let currentBgColor = 0;
+
+// document.getElementById("bgcolor-change-btn").addEventListener("click",function(event){
+//   event.target.st
+// })
+
+const bgBtnColor = document.getElementById("bgcolor-change-btn");
+bgBtnColor.addEventListener("click",function(){
+  document.getElementById("body-container").style.backgroundColor = colors[currentBgColor];
+  currentBgColor=(currentBgColor+1)%colors.length;
+});
 

@@ -4,33 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A5-DEV-BORD-PROJCT</title>
-  <!-- font awsome cd n -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- google font cdn -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <!-- tailwind css cdn  -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-slate-300">
+<body id="body-container" class="bg-slate-300">
  <main class="px-10 mx-auto py-2">
   <header >
-    <!-- navbar  -->
     <nav class="navbar justify-between items-center bg-[#FFFFFF] rounded-lg">
-      <!-- frist part -->
       <div class="flex justify-center items-center space-x-2">
         <img src="/assets/logo.png" alt="" srcset="">
         <h1 class="font-awesome text-3xl">DEV<span class="font-bold">BORD</span></h1>
       </div>
-      <!-- second part -->
       <div class="flex justify-center items-center space-x-10">
         <button class="flex justify-center items-center btn rounded-full">
           <img src="/assets/checkbox.png" alt="">
           <span id="quantity-increment" class="text-2xl">23</span>
         </button>
-        <button class="cursor-pointer bg-slate-300 p-2 rounded-full">
+        <button id="bgcolor-change-btn" class="cursor-pointer bg-slate-300 p-2 rounded-full">
           <img class="w-8" src="/assets/theme-btn.png" alt="">
         </button>
       </div>
@@ -38,11 +32,8 @@
     </nav>
   </header>
   <main class="grid grid-cols-4 my-2 ">
-    <!-- main part my web page -->
     <section class="col-span-3  bg-white  rounded-md p-2  mx-2">
-      <!-- main part -1  -->
       <section class="grid grid-cols-4 py-2 gap-3 border-b-1 border-dashed border-gray-400">
-        <!-- card-1 -->
         <div class="bg-slate-200 flex justify-center items-center gap-2 rounded-md px-4 py-6">
           <div class="p-2 bg-white rounded-full">
           <img src="/assets/checkbox.png" alt="">
@@ -52,29 +43,23 @@
             <span id="quantity-decrement" class="font-bold text-2xl">6</span>
           </div>
         </div>
-
-        <!-- card-2 -->
          <div id="discover-container" class="col-span-2  rounded-md px-4 py-6 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] flex justify-center items-center gap-4 ">
           <div>
             <img src="/assets/board.png" alt="">
           </div>
           <span class="text-2xl text-white ">Discover Something <br> New Today!</span>
          </div>
-
-         <!-- card-3  -->
           <div class="bg-slate-200 flex justify-center items-center gap-3  rounded-md px-4 py-6">
             <div>
               <img src="/assets/calender.png" alt="">
             </div>
             <div>
               <p>Web,</p>
-              <span class="font-semibold">March 13 2025</span>
+              <p id="date-daynamic" class="font-semibold"></p>
             </div>
           </div>
       </section>
-      <!-- main-part-2 -->
        <section class="grid grid-cols-3 mt-6 gap-2">
-        <!-- card -1 -->
         <div class="bg-slate-200 p-4 rounded-md space-y-4 ">
           <span class="p-2 bg-white rounded-md ">ShopEase</span>
           <h1 class="text-2xl mt-4 heading-card">Fix Mobile Button Issue</h1>
@@ -91,7 +76,6 @@
             </div>
           </div>
         </div>
-<!-- card-2 -->
         <div class="bg-slate-200 p-4 rounded-md space-y-4 ">
           <span class="p-2 bg-white rounded-md ">CloudSync</span>
           <h1 class="text-2xl mt-4 heading-card">Add Dark Mode </h1>
@@ -107,7 +91,6 @@
             </div>
           </div>
         </div>
-        <!-- card-3 -->
         <div class="bg-slate-200 p-4 rounded-md space-y-4 ">
           <span class="p-2 bg-white rounded-md ">SwiftPay</span>
           <h1 class="text-2xl mt-4 heading-card">Optimize  Home page</h1>
@@ -123,7 +106,6 @@
             </div>
           </div>
         </div>
-        <!-- card-4 -->
         <div class="bg-slate-200 p-4 rounded-md space-y-4 ">
           <span class="p-2 bg-white rounded-md ">Meta</span>
           <h1 class="text-2xl mt-4 heading-card">Add new emoji 🤲</h1>
@@ -140,7 +122,6 @@
             </div>
           </div>
         </div>
-        <!-- card-5 -->
         <div class="bg-slate-200 p-4 rounded-md space-y-4 ">
           <span class="p-2 bg-white rounded-md ">Google LLC</span>
           <h1 class="text-2xl mt-4 heading-card">Integrate OpenAI API</h1>
@@ -157,7 +138,6 @@
             </div>
           </div>
         </div>
-        <!-- card-6 -->
         <div class="bg-slate-200 p-4 rounded-md space-y-4 ">
           <span class="p-2 bg-white rounded-md ">Glassdoar</span>
           <h1 class="text-2xl mt-4 heading-card">Improve Job searching  </h1>
@@ -176,19 +156,15 @@
         </div>
        </section>
     </section>
-    <!-- another part my web page  -->
     <section class="min-h-screen bg-white rounded-md ">
       <div class="flex justify-center items-center py-4 flex-col border-b-1 border-dashed border-gray-400">
         <div class="flex justify-center items-center space-x-2">
           <img src="/assets/activity.png" alt="">
           <span class="text-xl font-medium">Activity Log</span>
         </div>
-        <button class="btn bg-[#3752FD] mt-3 text-white ">Clear History</button>
+        <button id="history-btn"  class="btn bg-[#3752FD] mt-3 text-white ">Clear History</button>
       </div>
-      <!-- containet -->
       <div id="card-sms-container">
-        
-        <!-- js code push here -->
       </div>
     </section>
   </main>
