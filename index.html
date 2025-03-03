@@ -28,7 +28,7 @@
       <div class="flex justify-center items-center space-x-10">
         <button class="flex justify-center items-center btn rounded-full">
           <img src="/assets/checkbox.png" alt="">
-          <span class="text-2xl">23</span>
+          <span id="quantity-increment" class="text-2xl">23</span>
         </button>
         <button class="cursor-pointer bg-slate-300 p-2 rounded-full">
           <img class="w-8" src="/assets/theme-btn.png" alt="">
@@ -49,16 +49,18 @@
           </div>
           <div>
             <h6 class="text-sm">Task Assigned</h6>
-            <span class="font-bold text-2xl">05</span>
+            <span id="quantity-decrement" class="font-bold text-2xl">6</span>
           </div>
         </div>
+
         <!-- card-2 -->
-         <div class="col-span-2  rounded-md px-4 py-6 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] flex justify-center items-center gap-4 ">
+         <div id="discover-container" class="col-span-2  rounded-md px-4 py-6 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] flex justify-center items-center gap-4 ">
           <div>
             <img src="/assets/board.png" alt="">
           </div>
           <span class="text-2xl text-white ">Discover Something <br> New Today!</span>
          </div>
+
          <!-- card-3  -->
           <div class="bg-slate-200 flex justify-center items-center gap-3  rounded-md px-4 py-6">
             <div>
@@ -75,7 +77,7 @@
         <!-- card -1 -->
         <div class="bg-slate-200 p-4 rounded-md space-y-4 ">
           <span class="p-2 bg-white rounded-md ">ShopEase</span>
-          <h1 class="text-2xl mt-4">Fix Mobile Button Issue </h1>
+          <h1 class="text-2xl mt-4 heading-card">Fix Mobile Button Issue</h1>
           <p class="p-2 bg-white rounded-md text-sm text-gray-400">Debug using Chrome DevTools, check for overlapping elements,
              and ensure onClick works properly 
           </p>
@@ -85,14 +87,14 @@
               <span class="font-semibold text-lg">March 13 2025</span>
             </div>
             <div>
-              <button class="btn bg-[#3752FD] text-lg text-white">Completed</button>
+              <button class="btn bg-[#3752FD] text-lg text-white card-btn">Completed</button>
             </div>
           </div>
         </div>
 <!-- card-2 -->
         <div class="bg-slate-200 p-4 rounded-md space-y-4 ">
           <span class="p-2 bg-white rounded-md ">CloudSync</span>
-          <h1 class="text-2xl mt-4">Add Dark Mode </h1>
+          <h1 class="text-2xl mt-4 heading-card">Add Dark Mode </h1>
           <p class="p-2 bg-white rounded-md text-sm text-gray-400">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.
           </p>
           <div class="flex justify-between items-end">
@@ -101,14 +103,14 @@
               <span class="font-semibold text-lg">March 13 2025</span>
             </div>
             <div>
-              <button class="btn bg-[#3752FD] text-lg text-white">Completed</button>
+              <button class="btn bg-[#3752FD] text-lg text-white card-btn">Completed</button>
             </div>
           </div>
         </div>
         <!-- card-3 -->
         <div class="bg-slate-200 p-4 rounded-md space-y-4 ">
           <span class="p-2 bg-white rounded-md ">SwiftPay</span>
-          <h1 class="text-2xl mt-4">Optimize  Home page</h1>
+          <h1 class="text-2xl mt-4 heading-card">Optimize  Home page</h1>
           <p class="p-2 bg-white rounded-md text-sm text-gray-400">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
           </p>
           <div class="flex justify-between items-end">
@@ -117,14 +119,14 @@
               <span class="font-semibold text-lg">March 13 2025</span>
             </div>
             <div>
-              <button class="btn bg-[#3752FD] text-lg text-white">Completed</button>
+              <button class="btn bg-[#3752FD] text-lg text-white card-btn">Completed</button>
             </div>
           </div>
         </div>
         <!-- card-4 -->
         <div class="bg-slate-200 p-4 rounded-md space-y-4 ">
           <span class="p-2 bg-white rounded-md ">Meta</span>
-          <h1 class="text-2xl mt-4">Add new emoji 🤲</h1>
+          <h1 class="text-2xl mt-4 heading-card">Add new emoji 🤲</h1>
           <p class="p-2 bg-white rounded-md text-sm text-gray-400">Debug using Chrome DevTools, check for overlapping elements,
              and ensure onClick works properly 
           </p>
@@ -134,14 +136,14 @@
               <span class="font-semibold text-lg">March 13 2025</span>
             </div>
             <div>
-              <button class="btn bg-[#3752FD] text-lg text-white">Completed</button>
+              <button class="btn bg-[#3752FD] text-lg text-white card-btn">Completed</button>
             </div>
           </div>
         </div>
         <!-- card-5 -->
         <div class="bg-slate-200 p-4 rounded-md space-y-4 ">
           <span class="p-2 bg-white rounded-md ">Google LLC</span>
-          <h1 class="text-2xl mt-4">Integrate OpenAI API</h1>
+          <h1 class="text-2xl mt-4 heading-card">Integrate OpenAI API</h1>
           <p class="p-2 bg-white rounded-md text-sm text-gray-400">Debug using Chrome DevTools, check for overlapping elements,
              and ensure onClick works properly 
           </p>
@@ -151,15 +153,15 @@
               <span class="font-semibold text-lg">March 13 2025</span>
             </div>
             <div>
-              <button class="btn bg-[#3752FD] text-lg text-white">Completed</button>
+              <button class="btn bg-[#3752FD] text-lg text-white card-btn">Completed</button>
             </div>
           </div>
         </div>
         <!-- card-6 -->
         <div class="bg-slate-200 p-4 rounded-md space-y-4 ">
           <span class="p-2 bg-white rounded-md ">Glassdoar</span>
-          <h1 class="text-2xl mt-4">Improve Job searching  </h1>
-          <p class="p-2 bg-white rounded-md text-sm text-gray-400">Debug using Chrome DevTools, check for overlapping elements,
+          <h1 class="text-2xl mt-4 heading-card">Improve Job searching  </h1>
+          <p class="p-2 bg-white rounded-md text-sm text-gray-400 card-btn">Debug using Chrome DevTools, check for overlapping elements,
              and ensure onClick works properly 
           </p>
           <div class="flex justify-between items-end">
@@ -168,7 +170,7 @@
               <span class="font-semibold text-lg">March 13 2025</span>
             </div>
             <div>
-              <button class="btn bg-[#3752FD] text-lg text-white">Completed</button>
+              <button class="btn bg-[#3752FD] text-lg text-white card-btn">Completed</button>
             </div>
           </div>
         </div>
@@ -184,11 +186,13 @@
         <button class="btn bg-[#3752FD] mt-3 text-white ">Clear History</button>
       </div>
       <!-- containet -->
-      <div>
-<!-- js code push here -->
+      <div id="card-sms-container">
+        
+        <!-- js code push here -->
       </div>
     </section>
   </main>
 </main>
+<script src="/js/script.js"></script>
 </body>
 </html>
